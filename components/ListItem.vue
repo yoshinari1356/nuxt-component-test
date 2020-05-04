@@ -1,5 +1,8 @@
 <template>
-  <div class="listItem">{{ item.id }} : listitem</div>
+  <div class="listItem">
+    <h4>listitem</h4>
+    {{ item.id }} : {{ item.name }}
+  </div>
 </template>
 <script lang="ts">
 export default {
