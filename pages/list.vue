@@ -1,5 +1,7 @@
 <template>
   <div class="">
+    <h1>list page</h1>
+    <h2>item data()の中に直で書いているケース</h2>
     <v-layout v-for="(item, i) in items" :key="i">
       <v-flex>
         test
