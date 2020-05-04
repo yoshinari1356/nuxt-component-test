@@ -4,7 +4,6 @@
     <h2>item data()の中に直で書いているケース</h2>
     <v-layout v-for="(item, i) in items" :key="i">
       <v-flex>
-        test
         <listItem :item="item"></listItem>
       </v-flex>
     </v-layout>
