@@ -2,19 +2,19 @@
   <div class="">
     <h1>list page</h1>
     <h2>item data()の中に直で書いているケース</h2>
-    <v-layout v-for="(item, i) in items" :key="i">
+    <v-layout v-for="(item, i) in items" :key="`1-${i}`">
       <v-flex>
         <listItem :item="item"></listItem>
       </v-flex>
     </v-layout>
     <h2>item2 asyncDataで先に読み込む</h2>
-    <v-layout v-for="(item, i) in items2" :key="i">
+    <v-layout v-for="(item, i) in items2" :key="`2-${i}`">
       <v-flex>
         <listItem :item="item"></listItem>
       </v-flex>
     </v-layout>
     <h2>item3 fetchで描画直前に読み込み</h2>
-    <v-layout v-for="(item, i) in items3" :key="i">
+    <v-layout v-for="(item, i) in items3" :key="`3-${i}`">
       <v-flex>
         <listItem :item="item"></listItem>
       </v-flex>
